@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 
-#%% Script using NumPy to use slicing to put back image a and b together
+#%% Script 1: using NumPy to use slicing to put back image a and b together
 a = mpimg.imread('a.jpg')
 b = mpimg.imread('b.jpg')
 
@@ -30,7 +30,7 @@ c[row_start:row_end, col_start:col_end, :] = b
 
 mpimg.imsave('c.jpg', c)
 
-#%% Script using NumPy to reveal differences between 2 images
+#%% Script 2: using NumPy to reveal differences between 2 images
 d = mpimg.imread('d.jpg')
 e = mpimg.imread('e.jpg')
 
@@ -53,7 +53,7 @@ f = f.astype(np.uint8)
 
 mpimg.imsave('f.jpg', f)
 
-#%% Script with NumPy to place minion in another img to change its background
+#%% Script 3: using NumPy to place minion in another img to change its background
 minion = mpimg.imread('g.jpg')
 shugga = mpimg.imread('h.jpg')
 
